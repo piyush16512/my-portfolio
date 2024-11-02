@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddb41ac13c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <span>Portfolio</span>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Piyush Kumar</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                </div>
+                <div class="about-col-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deleniti praesentium sed veritatis aliquam eos autem voluptatibus voluptatum aliquid. Dignissimos veniam dolore repudiandae sed deserunt debitis aspernatur optio perferendis, odio blanditiis delectus vel ea tenetur quaerat molestiae laborum magni quis qui? Nisi porro, exercitationem consectetur facilis totam eligendi illum delectus.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>C<br>C++<br>Java</li>
+                            <li><span>Graphic Design</span><br>UI/UX</li>
+                            <li><span>Development</span><br>App Development<br>Web Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Startup Student Coordinator</li>
+                            <li><span>2024</span><br>Internship in Web Designing from NIELIT Gorakhpur</li>
+                            <li><span>2023</span><br>Frontend Development - PHN Technology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2026</span><br>BTech - Computer Science Engineering</li>
+                            <li><span>2022</span><br>12th</li>
+                            <li><span>2020</span><br>10th</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni modi 
+                        quae quasi eum unde debitis esse exercitationem animi magnam?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni modi 
+                        quae quasi eum unde debitis esse exercitationem animi magnam?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni modi 
+                        quae quasi eum unde debitis esse exercitationem animi magnam?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="codizg.jpg">
+                    <div class="layer">
+                        <h3>Slot Booking Website</h3>
+                        <p>The website connects you to the various medical clinics for booking 
+                            an appointment with the desired doctor as well as for body checkup tests.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photogrphiz.jpg">
+                    <div class="layer">
+                        <h3>Blog Website</h3>
+                        <p>The website will provide you the access to add, edit, review and read articles and blogs related to various fields all around the world.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="codizg.jpg">
+                    <div class="layer">
+                        <h3>Spotify Clone</h3>
+                        <p>The website will look as similar as Spotify - A music platform, where you can play, pause and change music according to your interests.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> piyush387829@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>+91 - 9876543210</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="pic.jpg" download class="btn btn2">Download my photo</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <textarea name="message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Piyush Kumar. Made with <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
